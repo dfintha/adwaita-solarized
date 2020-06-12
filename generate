@@ -14,5 +14,6 @@ echo "Generating Assets"
 ./render-assets
 cp -rn ./assets/* ./package/gtk-2.0/assets/
 
-echo "Generating Theme File"
+echo "Generating Theme Files"
 sassc -M -t compact gtk-contained.scss ./package/gtk-3.0/gtk.css
+cp gtkrc ./package/gtk-2.0/gtkrc
