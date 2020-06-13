@@ -6,9 +6,18 @@ rm -rf ./package/*
 cp -r /usr/share/themes/Adwaita-dark/* ./package/
 
 echo "Generating Index File"
-#rm -f ./package/index.theme
-#cat << EOF > ./package/index.theme
-#EOF
+rm -f ./package/index.theme
+cat << EOF > ./package/index.theme
+[X-GNOME-Metatheme]
+Name=Adwaita Solarized
+Type=X-GNOME-Metatheme
+Comment=Solarized Dark version of GNOME's Adwaita theme.
+Encoding=UTF-8
+GtkTheme=Adwaita-dark
+IconTheme=Adwaita
+CursorTheme=Adwaita
+CursorSize=24
+EOF
 
 echo "Generating Assets"
 ./render-assets

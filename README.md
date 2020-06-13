@@ -1,4 +1,4 @@
-# Adwaita-Solarized
+# Adwaita Solarized
 
 This is a modified version of Adwaita-dark, which uses the Solarized color
 palette. As of now, only dark mode is supported.
